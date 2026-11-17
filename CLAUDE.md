@@ -17,6 +17,12 @@ Workspace for editing videos (social-media reels) in **DaVinci Resolve Studio 21
 - MCP: `run_script` (sandboxed Python, `resolve`/`project` pre-injected), `run_script_unsafe` (needs file I/O), `search_scripting_api` / `get_scripting_api` (API stubs — check these, the API is newer than training data), `get_image` (verify a timeline frame), `get_whats_new`.
 - Local: `ffmpeg`/`ffprobe` and `whisper` (openai-whisper CLI) in `/opt/homebrew/bin`. Scratch work goes in the session scratchpad, not this folder.
 
+## Scripts
+
+- `scripts/analyze.sh <video> <out_dir> [lang=en]` → `audio.json` (whisper words), `transcript.txt` (`word@start-end`, read this to pick cuts), `silences.txt`.
+- `scripts/cut_list.py keep.json silences.txt segments.json [--fps 30]` → frame segments with pauses removed. `keep.json` = `[[start_s, end_s], ...]` chosen from the transcript.
+- `scripts/resolve_helpers.py` — load in MCP `run_script_unsafe` via `exec(open(".../scripts/resolve_helpers.py").read())`, then `build_timeline`, `auto_captions`, `replace_captions(tl, srt_path, fixes)`, `add_music`, `render`. `render` returns the job status after ~55s — re-poll `GetRenderJobStatus` for long timelines.
+
 ## Reel editing workflow (what worked)
 
 1. **Transcribe** with word timestamps: `whisper audio.wav --model small --language en --word_timestamps True --output_format json`. Always force `--language` — auto-detect picked Malay for English speech (Malaysian accent) and produced a translated, useless transcript.
