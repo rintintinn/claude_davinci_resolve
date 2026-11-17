@@ -10,7 +10,7 @@ Workspace for editing videos (social-media reels) in **DaVinci Resolve Studio 21
 
 - `videos/` — source footage, rendered outputs, `.srt` captions. `videos/music/` — background music (record source + license when adding).
 - Media files are git-ignored (see `.gitignore`); only text (captions, docs, scripts) is committed.
-- Resolve project `Reel_20261117` holds timelines `Reel - clean cut` (full) and `Reel 60s - FB Story` (music on A2).
+- Resolve project `Reel_20261117` holds timelines `Reel - clean cut` (2:52, fillers still in), `Reel - no fillers` (2:37, current full version → `reel_edited_nofillers.mp4`) and `Reel 60s - FB Story` (music on A2; fillers still in).
 
 ## Tools
 
@@ -20,7 +20,8 @@ Workspace for editing videos (social-media reels) in **DaVinci Resolve Studio 21
 ## Scripts
 
 - `scripts/analyze.sh <video> <out_dir> [lang=en]` → `audio.json` (whisper words), `transcript.txt` (`word@start-end`, read this to pick cuts), `silences.txt`.
-- `scripts/cut_list.py keep.json silences.txt segments.json [--fps 30]` → frame segments with pauses removed. `keep.json` = `[[start_s, end_s], ...]` chosen from the transcript.
+- `scripts/find_fillers.py audio.wav fillers.json` (run with `/opt/homebrew/opt/openai-whisper/libexec/bin/python`) → um/uh/erm candidates via short prompted windows.
+- `scripts/cut_list.py keep.json silences.txt segments.json [--fps 30] [--remove fillers.json]` → frame segments with pauses (and exact `--remove` ranges, widened 0.04s) removed. `keep.json` = `[[start_s, end_s], ...]` chosen from the transcript.
 - `scripts/resolve_helpers.py` — load in MCP `run_script_unsafe` via `exec(open(".../scripts/resolve_helpers.py").read())`, then `build_timeline`, `auto_captions`, `replace_captions(tl, srt_path, fixes)`, `add_music`, `render`. `render` returns the job status after ~55s — re-poll `GetRenderJobStatus` for long timelines.
 
 ## Reel editing workflow (what worked)
@@ -32,6 +33,14 @@ Workspace for editing videos (social-media reels) in **DaVinci Resolve Studio 21
 5. **Noise**: `Timeline.SetVoiceIsolationState(1, {"isEnabled": True, "amount": 70})`.
 6. **Captions**: `Timeline.CreateSubtitlesFromAudio({...})` is async — poll `GetCreateSubtitlesFromAudioStatus()` until `Complete`. Then fix text via SRT round-trip (below).
 7. **Render** with `SubtitleFormat: "BurnIn"`; verify by grabbing frames with ffmpeg and re-transcribing the output audio.
+
+## Filler words (um/uh/erm) — hard-won lessons
+
+- Whisper **omits** disfluencies, so a plain transcript (and verifying with one) misses them entirely. Use `find_fillers.py`; it still misses some and returns zero-length/imprecise timings.
+- Fillers hide inside "stretched" words (e.g. `am@4.46-5.88`). Place cut edges from a 40 ms RMS-dB profile of `audio.wav`: fillers are steady low hums (~-25…-38 dB) between dips; a loud blob (~-15 dB) is usually a real word.
+- Ambiguous spots: transcribe the isolated slice (whisper on a 0.3–1.5 s window) to hear what is actually there. This exposed "erm, with–, without, without, you know" that both transcribers tidied into "without".
+- Every cut round: build an audio-only preview with ffmpeg (`atrim`+`concat`, `-/filter_complex file`), then (a) re-run `find_fillers.py` and (b) diff a plain whisper transcript against the previous version to catch clipped words. Resolve's `CreateSubtitlesFromAudio` on the rebuilt timeline is a fast (~20 s) second opinion; `MediaPoolItem.GetTranscription()` gives source word timings.
+- Final 2:37 cut used 34 filler cuts: `videos/reel_nofillers_fillers.json` (source seconds) → `videos/reel_nofillers_segments.json`.
 
 ## Resolve API gotchas (verified)
 

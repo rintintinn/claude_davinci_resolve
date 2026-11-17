@@ -1,0 +1,586 @@
+1
+00:00:00,000 --> 00:00:00,633
+I'm going to
+
+2
+00:00:00,633 --> 00:00:03,100
+demonstrate
+the web app
+
+3
+00:00:03,100 --> 00:00:05,033
+that I am
+developing.
+
+4
+00:00:05,533 --> 00:00:06,700
+It is a smart
+
+5
+00:00:06,700 --> 00:00:07,900
+teleprompter
+or a
+
+6
+00:00:07,900 --> 00:00:08,700
+smart cue
+card. So
+
+7
+00:00:08,700 --> 00:00:10,000
+basically you
+can put this
+
+8
+00:00:10,000 --> 00:00:12,967
+on your
+laptop or your
+
+9
+00:00:12,967 --> 00:00:14,833
+phone or
+your tablet
+
+10
+00:00:14,833 --> 00:00:15,967
+like iPad and
+
+11
+00:00:15,967 --> 00:00:17,533
+then you
+prepare your
+
+12
+00:00:17,533 --> 00:00:19,633
+talking
+points and the
+
+13
+00:00:19,633 --> 00:00:21,433
+device will
+listen and
+
+14
+00:00:21,433 --> 00:00:22,567
+will scroll
+
+15
+00:00:22,567 --> 00:00:23,567
+to your next
+
+16
+00:00:23,767 --> 00:00:24,567
+talking points
+
+17
+00:00:24,567 --> 00:00:26,067
+automatically
+so that
+
+18
+00:00:26,067 --> 00:00:27,933
+you know
+what you're
+
+19
+00:00:27,933 --> 00:00:28,700
+supposed to
+be saying.
+
+20
+00:00:29,233 --> 00:00:30,367
+And even
+if you are
+
+21
+00:00:30,367 --> 00:00:32,133
+digressing
+away or
+
+22
+00:00:32,133 --> 00:00:32,933
+you're
+chatting or
+
+23
+00:00:32,933 --> 00:00:33,233
+you're
+
+24
+00:00:33,233 --> 00:00:34,100
+answering
+the question,
+
+25
+00:00:34,433 --> 00:00:35,267
+you can
+always come
+
+26
+00:00:35,267 --> 00:00:36,700
+back to
+your talking
+
+27
+00:00:36,700 --> 00:00:37,967
+points without
+missing
+
+28
+00:00:37,967 --> 00:00:39,167
+the flow.
+So let me
+
+29
+00:00:39,167 --> 00:00:39,733
+just
+demonstrate.
+
+30
+00:00:40,000 --> 00:00:41,067
+Good morning
+ladies and
+
+31
+00:00:41,067 --> 00:00:42,100
+gentlemen.
+Thank you
+
+32
+00:00:42,100 --> 00:00:43,133
+for giving
+me the
+
+33
+00:00:43,133 --> 00:00:43,967
+opportunity
+to speak
+
+34
+00:00:43,967 --> 00:00:44,900
+today about
+
+35
+00:00:44,900 --> 00:00:46,800
+BPH, which
+stands for
+
+36
+00:00:46,800 --> 00:00:47,567
+benign
+prostatic
+
+37
+00:00:47,567 --> 00:00:48,667
+hyperplasia.
+In other
+
+38
+00:00:48,667 --> 00:00:50,267
+words, it is
+actually a
+
+39
+00:00:50,267 --> 00:00:51,167
+condition
+in which
+
+40
+00:00:51,167 --> 00:00:52,333
+there is
+benign
+
+41
+00:00:52,333 --> 00:00:53,267
+enlargement
+of the
+
+42
+00:00:53,267 --> 00:00:54,333
+prostate.
+It's a very
+
+43
+00:00:54,333 --> 00:00:55,067
+common
+condition
+
+44
+00:00:55,067 --> 00:00:56,233
+occurring
+especially in
+
+45
+00:00:56,233 --> 00:00:59,367
+aging men
+and many men
+
+46
+00:00:59,367 --> 00:01:00,867
+think that
+this is
+
+47
+00:01:00,867 --> 00:01:02,700
+actually a
+cancerous
+
+48
+00:01:02,700 --> 00:01:03,367
+condition but
+
+49
+00:01:03,367 --> 00:01:04,133
+it's actually
+
+50
+00:01:04,233 --> 00:01:05,567
+not prostate
+cancer.
+
+51
+00:01:05,567 --> 00:01:07,033
+BPH and
+prostate cancer
+
+52
+00:01:07,033 --> 00:01:08,000
+are two
+separate
+
+53
+00:01:08,000 --> 00:01:09,233
+diseases.
+So the
+
+54
+00:01:09,233 --> 00:01:10,067
+symptoms
+that the
+
+55
+00:01:10,067 --> 00:01:11,367
+patient
+may present
+
+56
+00:01:11,367 --> 00:01:13,033
+include
+having poor
+
+57
+00:01:13,033 --> 00:01:14,433
+urinary
+stream and
+
+58
+00:01:14,433 --> 00:01:16,733
+hesitancy.
+So here I'll
+
+59
+00:01:16,733 --> 00:01:17,867
+try and
+digress
+
+60
+00:01:17,867 --> 00:01:19,567
+away and
+talk about
+
+61
+00:01:19,567 --> 00:01:21,233
+something
+else. Not
+
+62
+00:01:21,233 --> 00:01:22,467
+related to
+the talk.
+
+63
+00:01:22,467 --> 00:01:23,567
+Maybe the
+audience is
+
+64
+00:01:23,567 --> 00:01:24,067
+asking me a
+
+65
+00:01:24,067 --> 00:01:27,067
+question or
+anything. I
+
+66
+00:01:27,067 --> 00:01:28,000
+may be
+talking about
+
+67
+00:01:28,000 --> 00:01:29,267
+the weather,
+not related
+
+68
+00:01:29,267 --> 00:01:30,000
+to the
+
+69
+00:01:30,000 --> 00:01:30,967
+presentation
+at all.
+
+70
+00:01:30,967 --> 00:01:31,833
+And now I
+want to come
+
+71
+00:01:31,833 --> 00:01:32,633
+back to the
+
+72
+00:01:32,633 --> 00:01:34,500
+presentation.
+So some
+
+73
+00:01:34,500 --> 00:01:35,867
+other patients
+may have
+
+74
+00:01:35,867 --> 00:01:37,433
+urinary
+frequency,
+
+75
+00:01:38,100 --> 00:01:40,500
+urgency or
+they may be
+
+76
+00:01:40,500 --> 00:01:41,833
+waking up
+at night to
+
+77
+00:01:41,833 --> 00:01:42,933
+pee. It's
+called
+
+78
+00:01:42,933 --> 00:01:44,667
+nocturia or
+
+79
+00:01:44,667 --> 00:01:45,533
+they may
+feel that
+
+80
+00:01:45,600 --> 00:01:47,467
+not everything
+has come
+
+81
+00:01:47,467 --> 00:01:48,733
+out. So they
+have this
+
+82
+00:01:48,733 --> 00:01:49,733
+thing called
+incomplete
+
+83
+00:01:49,733 --> 00:01:50,633
+bladder
+emptying.
+
+84
+00:01:50,967 --> 00:01:53,467
+So obviously
+this can
+
+85
+00:01:53,467 --> 00:01:54,667
+affect the
+quality of
+
+86
+00:01:54,667 --> 00:01:56,167
+life and
+sleep of the
+
+87
+00:01:56,167 --> 00:01:57,067
+patient.
+So you see
+
+88
+00:01:57,067 --> 00:01:57,600
+there I have
+
+89
+00:01:57,600 --> 00:01:59,467
+that inside
+the bracket
+
+90
+00:01:59,467 --> 00:02:00,500
+there, show
+image. So
+
+91
+00:02:00,500 --> 00:02:01,733
+that gives
+also me the
+
+92
+00:02:01,733 --> 00:02:02,767
+cue to click
+
+93
+00:02:02,767 --> 00:02:03,700
+on my slide
+
+94
+00:02:03,700 --> 00:02:05,333
+so that I
+can show an
+
+95
+00:02:05,333 --> 00:02:06,733
+image for
+instance. So
+
+96
+00:02:06,733 --> 00:02:07,200
+right now I'm
+
+97
+00:02:07,200 --> 00:02:08,100
+digressing
+but I
+
+98
+00:02:08,100 --> 00:02:08,967
+can go
+back to my
+
+99
+00:02:08,967 --> 00:02:10,267
+point.
+Worse if it
+
+100
+00:02:10,267 --> 00:02:11,433
+leads to
+urinary
+
+101
+00:02:11,433 --> 00:02:13,267
+retention
+and other
+
+102
+00:02:13,267 --> 00:02:14,200
+things that
+can occur
+
+103
+00:02:14,200 --> 00:02:14,367
+the patient
+may get
+
+104
+00:02:14,400 --> 00:02:16,633
+urinary tract
+infection
+
+105
+00:02:16,633 --> 00:02:18,367
+or UTIs,
+formation of
+
+106
+00:02:18,367 --> 00:02:20,033
+bladder stones
+and even
+
+107
+00:02:20,033 --> 00:02:21,267
+to the extent
+of kidney
+
+108
+00:02:21,367 --> 00:02:22,633
+issues.
+All right
+
+109
+00:02:22,633 --> 00:02:23,233
+that's my
+
+110
+00:02:23,233 --> 00:02:24,200
+demonstration.
+Thank
+
+111
+00:02:24,200 --> 00:02:25,433
+you. You
+can go to
+
+112
+00:02:25,433 --> 00:02:27,600
+oratocue.web.app
+
+113
+00:02:27,600 --> 00:02:29,100
+and it's free.
+
+114
+00:02:29,100 --> 00:02:30,067
+You can use
+it as much
+
+115
+00:02:30,067 --> 00:02:31,100
+as you like.
+I've tried
+
+116
+00:02:31,100 --> 00:02:32,433
+it on my
+phone. It
+
+117
+00:02:32,433 --> 00:02:33,567
+works very
+well and
+
+118
+00:02:33,567 --> 00:02:34,033
+I've tried it
+
+119
+00:02:34,033 --> 00:02:35,600
+on my
+laptop and I
+
+120
+00:02:35,600 --> 00:02:36,267
+think it
+should work
+
+121
+00:02:36,267 --> 00:02:36,867
+well on a
+
+122
+00:02:36,900 --> 00:02:37,500
+tablet
+as well.
