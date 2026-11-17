@@ -1,0 +1,14 @@
+.DS_Store
+
+# Media (large binaries — keep out of git)
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.m4a
+*.aif
+*.aiff
+*.flac
+*.png
+*.jpg
